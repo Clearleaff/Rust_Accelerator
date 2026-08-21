@@ -1,0 +1,29 @@
+name: Bug report
+description: Report incorrect, unsafe, or unclear guidance.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve the project. Do not include secrets, production payloads, or personal data.
+  - type: input
+    id: location
+    attributes:
+      label: Affected file or section
+      placeholder: skills/example/SKILL.md, Shared Guardrails
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong or unsafe?
+      placeholder: Describe the observed guidance and expected correction.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction or example
+      description: Use synthetic data only.
+    validations:
+      required: true

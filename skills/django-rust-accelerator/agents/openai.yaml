@@ -1,0 +1,4 @@
+interface:
+  display_name: "Django Rust Accelerator"
+  short_description: "Move slow Django/Python hot paths into Rust safely (PyO3/maturin)"
+  default_prompt: "Use $django-rust-accelerator to profile a slow Django function, extract the hot path to Rust, and integrate it back safely."

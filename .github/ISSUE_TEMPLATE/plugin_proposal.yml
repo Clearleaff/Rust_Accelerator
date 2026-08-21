@@ -1,0 +1,26 @@
+name: Plugin proposal
+description: Propose a host-language or framework accelerator skill.
+title: "[Plugin]: "
+labels: [plugin]
+body:
+  - type: input
+    id: stack
+    attributes:
+      label: Host stack
+      placeholder: FastAPI, Rails, .NET, Go
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Proposed binding and boundary
+      placeholder: Explain the default binding, plain input/output shape, host fallback, and why it fits this stack.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Framework-specific risks
+      placeholder: Cover request/context ownership, permissions, transactions, data access, deployment, and concurrency.
+    validations:
+      required: true
